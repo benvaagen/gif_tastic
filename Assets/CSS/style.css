@@ -1,0 +1,12 @@
+.img-box {
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    float: left;
+    margin: 15px;  
+}
+
+body {
+    background-color: purple;
+}
