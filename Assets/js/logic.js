@@ -22,7 +22,8 @@ $(document).ready(function () {
         $.get('http://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=10')
             .then(function (data) {
                 console.log(data); //make it so I can see json data
-                for (var i = 0; i <= 10; i++) {
+                var results = data.data;
+                for (var i = 0; i < results.length; i++) {
                     var gifImg = data.data[i].images.downsized.url; //problem I think
                     createBox(gifImg);
                 }
@@ -33,8 +34,6 @@ $(document).ready(function () {
         var $newImg = $('<img>');
         $newImg.attr('src', gifImg);
         $newImg.addClass('img-box');
-
-
         $imgBody.append($newImg);
 
 
@@ -45,4 +44,4 @@ $(document).ready(function () {
 
 
 
-}); 
+});
