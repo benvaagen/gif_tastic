@@ -20,7 +20,7 @@ $(document).ready(function () {
     //Make a get request to the giphy api with the input value
     function getGiphys(inputVal) {
         $.get('http://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' + apiKey + '&limit=10')
-            .done(function (data) {
+            .then(function (data) {
                 console.log(data); //make it so I can see json data
                 for (var i = 0; i <= 10; i++) {
                     var gifImg = data.data[i].images.downsized.url; //problem I think
