@@ -21,19 +21,24 @@
 </head>
 
 <body>
+    <!-- jumbotron -->
     <div class="container">
-        <form>
+        <div class="jumbotron">
+            <h1>Giphy Search</h1>
+        </div>
+    </div>
+    <!-- button holder -->
+    <div class="container">
             <div class="form-group">
-                <label for="">Search For Giphys</label>
-                <input type="text" class="form-control" id="input" placeholder="Search">
+                <label for="gif-input"></label>
+                <input type="text" class="form-control" id="gif-input" placeholder="Add a Button, click the buttons to bring the GIF's">
+                <button type="submit" class="btn btn-primary" id="add-gif">Add Button</button>
             </div>
-            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-        </form>
-
+            <div id="newButtons"></div>
+        <!-- Where the GIF's appear -->
         <div class="results">
             <div class="panel panel-default">
                 <div class="panel-body img-body">
-                    <div class="img-box"></div>
                 </div>
             </div>
         </div>

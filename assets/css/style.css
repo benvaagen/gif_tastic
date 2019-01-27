@@ -2,7 +2,52 @@ body {
     background-image: url(../images/cool-background1.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: purple;
 }
+
+body .jumbotron {
+    background-color: rgb(36,5,103,0.5);
+    color: white;
+    padding: 1rem;
+    font-family: 'Staatliches', cursive;
+    font-size: 8rem;
+    text-align: center;
+    margin: 20px;
+    border: white solid 2px;
+}
+#input {
+    width: 50%;
+    display: inline-block;
+}
+
+button {
+    background: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgba(92, 1, 153);
+    font-size: 16px;
+    transition-duration: .5s;
+    margin: 1px;
+    align-content: center;
+    justify-content: center;
+}
+
+#add-gif:hover {
+    background: #380447;
+    border: 1px solid rgb(176, 6, 243);
+    color: white;
+    cursor: pointer;
+
+}
+
+/* submit:hover {
+    background: #380447;
+    border: 1px solid rgb(176, 6, 243);
+    color: white;
+    cursor: pointer;
+} */
+
 
 .img-box {
     height: 150px;
@@ -13,14 +58,19 @@ body {
     margin: 15px;  
 }
 
-.container {
+.newbuttons {
+    font-size: 20px;
+
+}
+
+/* .container {
     color: white;
     font-size: 80px;
     text-shadow: 2px 2px hsl(0, 0%, 20%);
     font-family: 'Staatliches', cursive;
     text-align: center;
 
-}
+} */
 
 body {
     background-color: purple;
