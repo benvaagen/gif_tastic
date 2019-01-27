@@ -33,13 +33,13 @@ button {
     justify-content: center;
 }
 
-#add-gif:hover {
+/* #add-gif:hover {
     background: #380447;
     border: 1px solid rgb(176, 6, 243);
     color: white;
     cursor: pointer;
 
-}
+} */
 
 /* submit:hover {
     background: #380447;
