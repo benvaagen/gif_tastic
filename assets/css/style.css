@@ -5,6 +5,17 @@ body {
     background-color: purple;
 }
 
+#newButtons {
+    align-items: center;
+}
+
+#add-gif {
+    margin: 10px;
+    background-color: rgb(107, 2, 152);
+    border: solid 1px white;
+    align-self: center;
+}
+
 body .jumbotron {
     background-color: rgb(36,5,103,0.5);
     color: white;
