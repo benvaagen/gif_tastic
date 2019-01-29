@@ -20,12 +20,12 @@ $(document).ready(function () {
             "&limit=12";
         console.log(url)
         $.get(url).then(function (data) {
-            // console.log(data); //make it so I can see json data
+            console.log(data); //make it so I can see json data
             var results = data.data;
 
             for (var i = 0; i < results.length; i++) {
-                var animatedImg = data.data[i].images.downsized.url; //reference the animated version
-                var stillImg = data.data[i].images.fixed_width_still.url; //reference the still version
+                var animatedImg = data.data[i].images.fixed_height.url; //reference the animated version
+                var stillImg = data.data[i].images.fixed_height_still.url; //reference the still version
                 var p = $("<p>").text("Rating: " + results[i].rating);
                 var gifDiv = $('<div class=\"gif-item\">');
                 // // createBox(stillImg, animatedImg);
