@@ -1,12 +1,17 @@
 body {
-    background-image: url(../images/cool-background1.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/cool-background1.png), url(../images/cool-background2.png), url(../images/cool-background2.png), url(../images/cool-background2.png);
+    background-position: right bottom, right bottom;
+    background-repeat: no-repeat, repeat;
     background-size: 100%;
     background-color: purple;
 }
 
+.goGif {
+    margin: 10 auto;
+}
+
 #add-gif {
-    width: 10%;
+    width: 120px;
     margin-left: 40%;
     margin-right: 40%;
     margin-top: 5px;
@@ -18,19 +23,32 @@ body {
 
 p {
     color: white;
-    text-align: center;
 }
 
-body .jumbotron {
+h1 {
+    font-size: 8rem;
+    text-shadow: 0 0 20px peachpuff;
+}
+
+.results {
+    margin: 0 auto;
+}
+
+.gif-item {
+    float: left;
+    padding: 15px;
+}
+
+.jumbotron {
     background-color: rgb(66, 19, 100);
     color: white;
-    padding: 1rem;
+    padding: 10px;
     font-family: 'Staatliches', cursive;
     font-size: 3rem;
     text-align: center;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
     border: white solid 2px;
@@ -54,45 +72,17 @@ button {
     justify-content: center;
 }
 
-/* #add-gif:hover {
-    background: #380447;
-    border: 1px solid rgb(176, 6, 243);
-    color: white;
-    cursor: pointer;
 
-} */
-
-/* submit:hover {
-    background: #380447;
-    border: 1px solid rgb(176, 6, 243);
-    color: white;
-    cursor: pointer;
-} */
-
-
-.img-box {
-    height: 150px;
-    width: 150px;
-    border: 1px solid white;
-    border-radius: 10px;
-    float: left;
-    margin: 15px;
-}
-
-.newbuttons {
+#newbuttons {
     font-size: 20px;
-
+    margin: 0 auto;
 }
-
-/* .container {
-    color: white;
-    font-size: 80px;
-    text-shadow: 2px 2px hsl(0, 0%, 20%);
-    font-family: 'Staatliches', cursive;
-    text-align: center;
-
-} */
 
 body {
     background-color: purple;
+}
+
+#gif-input {
+    width: 70%;
+    margin: 0 auto;
 }

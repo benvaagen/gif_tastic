@@ -14,10 +14,10 @@ $(document).ready(function () {
     function getGiphys(inputVal) {
         console.log(inputVal);
         var url = "https://api.giphy.com/v1/gifs/search?q=" +
-        inputVal +
-        "&api_key=" +
-        apiKey +
-        "&limit=12";
+            inputVal +
+            "&api_key=" +
+            apiKey +
+            "&limit=12";
         console.log(url)
         $.get(url).then(function (data) {
             // console.log(data); //make it so I can see json data
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 var animatedImg = data.data[i].images.downsized.url; //reference the animated version
                 var stillImg = data.data[i].images.fixed_width_still.url; //reference the still version
                 var p = $("<p>").text("Rating: " + results[i].rating);
-                var gifDiv = $('<div>');
+                var gifDiv = $('<div class=\"gif-item\">');
                 // // createBox(stillImg, animatedImg);
                 gifDiv.append(p);
                 // gifDiv.append(stillImg);
@@ -37,8 +37,8 @@ $(document).ready(function () {
                 );
                 console.log(gifDiv);
                 $(".results").prepend(gifDiv);
-                console.log($('.results').html());
-                
+                //console.log($('.results').html());
+
             }
         });
     }
@@ -52,7 +52,7 @@ $(document).ready(function () {
         $("#newButtons").empty();
         for (var i = 0; i < presetGifs.length; i++) {
             console.log(presetGifs[i]);
-            $("#newButtons").append("<button class='goGif'>" + presetGifs[i] + "</button>" );
+            $("#newButtons").append("<button class='goGif'>" + presetGifs[i] + "</button>");
 
         }
     }
@@ -63,8 +63,8 @@ $(document).ready(function () {
         getGiphys($(this).text());
     });
 
-    
-    
+
+
 
     // get input value when the user presses submit
     $submit.on("click", function (event) {
@@ -72,7 +72,7 @@ $(document).ready(function () {
         var showGif = $(this).attr("data-gif")
         $imgBody.empty();
         var inputVal = $input.val();
-        
+
         // Empties search box after the submit button is clicked.
         $input.val("");
     });
