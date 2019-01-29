@@ -43,11 +43,11 @@ $(document).ready(function () {
         });
     }
 
-    //TO DO: Make it so the gif's show up when you click the button.
-    //       Append a rating to each gif
-    //       Center the Add Button Bar, submit button, and buttons.
+    //TO DO: 
+    //       Center the add button bar, and buttons.
     //       Repeat the background image, or add another one.
     //       Make it so the buttons show up in two rows when on a phone
+
     function renderButtons() {
         $("#newButtons").empty();
         for (var i = 0; i < presetGifs.length; i++) {
