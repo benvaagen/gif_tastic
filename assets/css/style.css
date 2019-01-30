@@ -19,14 +19,14 @@ body {
 }
 
 #add-gif {
-    width: 120px;
+    width: 20%;
     margin-left: 40%;
     margin-right: 40%;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: rgb(107, 2, 152);
     border: solid 1px white;
-    text-align: center;
+    text-align: center;  
 }
 
 p {
@@ -60,6 +60,10 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
     border: white solid 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
 }
 
 #input {
@@ -93,4 +97,8 @@ body {
 #gif-input {
     width: 70%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
