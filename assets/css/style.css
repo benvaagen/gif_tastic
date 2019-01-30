@@ -33,7 +33,6 @@ p {
 }
 
 h1 {
-    font-size: 8rem;
     text-shadow: 0 0 20px peachpuff;
 }
 
@@ -82,11 +81,6 @@ button {
     justify-content: center;
 }
 
-
-#newbuttons {
-    font-size: 20px;
-    margin: 0 auto;
-}
 
 body {
     background-color: purple;
