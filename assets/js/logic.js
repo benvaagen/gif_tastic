@@ -22,6 +22,7 @@ $(document).ready(function () {
         $.get(url).then(function (data) {
             console.log(data); //make it so I can see json data
             var results = data.data;
+            $('.results').html('');
 
             for (var i = 0; i < results.length; i++) {
                 var animatedImg = data.data[i].images.fixed_height.url; //reference the animated version
