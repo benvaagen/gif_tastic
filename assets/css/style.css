@@ -6,6 +6,14 @@ body {
     background-color: purple;
 }
 
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
 .goGif {
     margin: 10 auto;
 }
